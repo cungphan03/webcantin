@@ -1,0 +1,113 @@
+header{
+    background-color: rgb(178, 94, 78);
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+}
+h1{
+    font-size: 40px;
+    color: aliceblue;
+   padding-top: 20px;
+    
+}
+.bia h1{
+    color: rgb(163, 85, 85);
+    text-align: center;
+
+}
+.bia img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+.qb h3{
+    color: aliceblue;
+    text-align: center;
+    padding-top:0px;
+}
+.td{
+    color:black;
+    text-align: center;
+    padding-top:0px;
+
+}
+nav {
+    display: flex;
+    justify-content: center; /* đẩy sang phải */
+    position: fixed;   /* cố định */
+    top: 0;            /* dính trên cùng */
+    left: 0;
+    width: 100%;       /* full ngang */
+    background-color: #f9d4d4;
+    z-index: 1000;     /* luôn nằm trên */
+    padding: 10px;
+    margin: 0;
+    overflow-x: hidden; /* chặn tràn ngang */
+    font-size: 30px;
+}
+nav a {
+    color: rgba(238, 100, 100, 0.927);
+    margin-left: 15px;
+    text-decoration: none;
+    margin-right: 30px;
+}
+nav a:hover {
+    color: rgb(233, 6, 6); /* đổi màu khi hover */
+}
+body {
+    margin-top: 60px; /* bằng chiều cao navbar */
+    margin: 0;
+    overflow-x: hidden; /* chặn tràn ngang */
+
+}
+
+.menu {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /*  2 cột */
+    gap: 50px;
+    padding: 40px;
+    justify-content: space-around; /* giãn đều */
+    gap: 80px; /* khoảng cách giữa các item */
+}
+
+.item {
+    width: 400px;
+    text-align: center;
+    
+}
+
+.item img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover; /* làm ảnh đầy khung ko xéo  */
+    padding-left: 90px;
+    border-radius: 10px;
+}
+.item h2 {
+    margin-top: 20px;
+    font-size: 40px;
+    color: #6b2c2c; 
+    font-family: serif;
+    letter-spacing: 2px;
+  
+}
+.chan{
+    background: #f9d4d4; 
+    display: flex;
+    justify-content: space-between;/*đẩy phần tử ra 2 bên*/
+    /*align-items: center;   căn giữa dọc */
+    margin-top: 60px;
+    padding: 30px 60px;
+}
+
+.chu h3{
+    margin: 5px 0;
+    font-size: 22px;
+    font-style: italic;
+    text-align: flex;
+    color: rgba(238, 100, 100, 0.927);
+    text-align: none;
+}
+

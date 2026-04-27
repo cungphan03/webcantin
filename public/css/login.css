@@ -1,0 +1,61 @@
+
+        body {
+            font-family: Arial;
+            background-color: #f9d4d4;
+        }
+        .login-box {
+            width: 350px;
+            margin: 100px auto;
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.2);
+        }
+        h2 {
+            text-align: center;
+        }
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background: #28a745;
+            color: white;
+            border: none;
+            border-radius: 8px;
+        }
+        .error {
+            color: red;
+            text-align: center;
+        }
+        .back {
+            display: block;
+            text-align: center;
+            margin-top: 10px;
+        }
+        nav {
+    display: flex;
+    justify-content: center; /* đẩy sang phải */
+    position: fixed;   /* cố định */
+    top: 0;            /* dính trên cùng */
+    left: 0;
+    width: 100%;       /* full ngang */
+    background-color: #f9d4d4;
+    z-index: 1000;     /* luôn nằm trên */
+    padding: 10px;
+    margin: 0;
+    overflow-x: hidden; /* chặn tràn ngang */
+    font-size: 30px;
+}
+nav a {
+    color: rgba(238, 100, 100, 0.927);
+    margin-left: 15px;
+    text-decoration: none;
+    margin-right: 30px;
+}
+nav a:hover {
+    color: rgb(233, 6, 6); /* đổi màu khi hover */
+}
