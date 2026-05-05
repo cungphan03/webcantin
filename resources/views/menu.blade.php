@@ -8,8 +8,9 @@
          <nav>
             <a href="/home">Trang chủ</a>
             <a href="/menu">Thực đơn</a>
+            <a href="/thanhtoan">Thanh toán</a>
             <a href="/login">Đăng nhập</a>
-            <a href="/login">Thanh toán</a>
+            
         </nav>
         <h1>Thực đơn hôm nay</h1><hr>
         

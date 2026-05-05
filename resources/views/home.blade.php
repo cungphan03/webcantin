@@ -20,8 +20,9 @@
         <nav>
             <a href="/home">Trang chủ</a>
             <a href="/menu">Thực đơn</a>
+            <a href="/thanhtoan">Thanh toán</a>
             <a href="/login">Đăng nhập</a>
-            <a href="/login">Thanh toán</a>
+            
         </nav>
         <h1 class="td"> MÓN ĂN NỔI BẬT</h1>
         <div class="menu">
