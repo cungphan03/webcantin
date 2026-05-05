@@ -1,7 +1,7 @@
 
         body {
             font-family: Arial;
-            background-color: #f9d4d4;
+            background-color: #f1b3c2;
         }
         .login-box {
             width: 350px;
@@ -13,6 +13,7 @@
         }
         h2 {
             text-align: center;
+            color:#ff5f88;
         }
         input {
             width: 100%;
@@ -22,10 +23,12 @@
         button {
             width: 100%;
             padding: 10px;
-            background: #28a745;
+            background: #ff5f88;
             color: white;
             border: none;
             border-radius: 8px;
+            font-size: 20px;
+            text-align: center;
         }
         .error {
             color: red;
@@ -58,4 +61,15 @@ nav a {
 }
 nav a:hover {
     color: rgb(233, 6, 6); /* đổi màu khi hover */
+}
+.qv{
+    
+    text-align: center;
+    padding-top: 5px;
+    
+}
+.qv a{
+    text-decoration: none;
+    color:#ff5f88;
+
 }

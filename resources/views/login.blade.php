@@ -11,6 +11,7 @@
             <a href="/home">Trang chủ</a>
             <a href="/menu">Thực đơn</a>
             <a href="/login">Đăng nhập</a>
+            <a href="/login">Thanh toán</a>
         </nav>
 <div class="login-box">
     <h2>Đăng nhập</h2>
@@ -38,8 +39,10 @@
 
         <button type="submit">Đăng nhập</button>
     </form>
-
-    <a href="{{ url('/home') }}" class="back">← Quay về trang chủ</a>
+    <div class="qv">
+        <a href="/home" >← Quay về trang chủ</a>
+    </div>
+    
 </div>
 </body>
 </html>
