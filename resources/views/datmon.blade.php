@@ -18,9 +18,8 @@
             <form action="{{ route('datmon.store') }}" method="POST">
                 @csrf
                 <input type="hidden" name="dish_id" value="{{ $dish->id }}">
-                <label>Số lượng:</label>
                 <input type="number" name="quantity" value="1" min="1">
-                <button type="submit">Xác nhận đặt món</button>
+                <button type="submit">Đặt món</button>
             </form>
         </div>
 

@@ -1,0 +1,99 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f6fa;
+    margin: 0;
+    padding: 0;
+}
+
+/* NAVBAR */
+nav {
+    display: flex;
+    justify-content: center; /* đẩy sang phải */
+    position: fixed;   /* cố định */
+    top: 0;            /* dính trên cùng */
+    left: 0;
+    width: 100%;       /* full ngang */
+    background-color: #f9d4d4;
+    z-index: 1000;     /* luôn nằm trên */
+    padding: 10px;
+    margin: 0;
+    overflow-x: hidden; /* chặn tràn ngang */
+    font-size: 30px;
+}
+nav a {
+    color: rgba(238, 100, 100, 0.927);
+    margin-left: 15px;
+    text-decoration: none;
+    margin-right: 30px;
+}
+nav a:hover {
+    color: rgb(233, 6, 6); /* đổi màu khi hover */
+}
+
+/* TITLE */
+h1 {
+    text-align: center;
+    margin: 40px 0;
+    color: #ff5f88;
+    padding-top: 50px;
+}
+
+/* TABLE */
+table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+table th {
+    background-color: #ff5f88;
+    color: white;
+    padding: 12px;
+}
+
+table td {
+    text-align: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+table tr:hover {
+    background-color: #f1f2f6;
+}
+
+/* IMAGE */
+table img {
+    border-radius: 8px;
+}
+
+/* TOTAL */
+h2 {
+    text-align: center;
+    margin-top: 20px;
+    color: #e84118;
+}
+
+/* EMPTY */
+p {
+    text-align: center;
+    font-size: 18px;
+}
+
+/* BUTTON */
+.bt {
+    text-align: center;
+}
+
+.bt button {
+    margin-top: 20px;
+    padding: 15px 25px;
+    background: #ff5f88;
+    color: white;
+    border-radius: 5px;
+}
+
+button:hover {
+   background: red;
+}

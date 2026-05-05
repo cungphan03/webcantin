@@ -26,17 +26,52 @@ class DishController extends Controller
     }
     public function storeOrder(Request $request)
 {
+    
     $request->validate([
         'dish_id' => 'required|exists:dishes,id',
         'quantity' => 'required|integer|min:1',
     ]);
 
     Order::create([
-        'user_id' => Auth::id(), // 🔥 nằm ở đây
-        'dish_id' => $request->dish_id,
-        'quantity' => $request->quantity,
-    ]);
+    'user_id' => Auth::id(),
+    'dish_id' => $request->dish_id,
+    'quantity' => $request->quantity,
+    'status' => 'pending', // thêm dòng này
+]);
 
     return back()->with('success', 'Đặt món thành công!');
+}
+public function thanhtoan()
+{
+    $orders = Order::with('dish')
+        ->where('user_id', Auth::id())
+        ->where('status', 'pending') 
+        ->get();
+
+    return view('thanhtoan', compact('orders'));
+}
+public function xulyThanhtoan()
+{
+    $orders = Order::with('dish')
+        ->where('user_id', Auth::id())
+        ->where('status', 'pending') 
+        ->get();
+
+    if ($orders->isEmpty()) {
+        return redirect('/thanhtoan')
+            ->with('error', 'Chưa có món để thanh toán!');
+    }
+
+    $total = 0;
+    foreach ($orders as $order) {
+        $total += $order->quantity * $order->dish->price;
+    }
+
+    Order::where('user_id', Auth::id())
+        ->where('status', 'pending')
+        ->update(['status' => 'paid']);
+
+    return redirect('/thanhtoan')
+        ->with('success', 'Thanh toán thành công! Tổng tiền: ' . number_format($total) . ' VND');
 }
 }

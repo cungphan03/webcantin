@@ -10,5 +10,9 @@ class Dish extends Model
     use HasFactory;
 
     protected $fillable = ['name', 'price', 'description','image'];
+    public function orders()
+{
+    return $this->hasMany(Order::class);
+}
 
 }

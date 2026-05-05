@@ -9,5 +9,9 @@ class Order extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['user_id', 'dish_id', 'quantity'];
+    protected $fillable = ['user_id', 'dish_id', 'quantity', 'status'];
+   public function dish()
+{
+    return $this->belongsTo(Dish::class);
+}
 }
