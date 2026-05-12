@@ -29,19 +29,19 @@
         <div class="menu">
             <div class="item">
             <img src="{{ asset('images/banhgaocay.jpg') }}" alt="">
-            <p><h2>Bánh gạo cay</h2></p>
+            <h2>Bánh gạo cay</h2>
             </div>
             <div class="item">
             <img src="{{ asset('images/banhxeo.jpg') }}" alt="">
-            <p><h2>Bánh xèo</h2></p>
+            <h2>Bánh xèo</h2>
             </div>
             <div class="item">
             <img src="{{ asset('images/banhuot.jpg') }}" alt="">
-            <p><h2>Bánh ướt</h2></p>
+            <h2>Bánh ướt</h2>
             </div>
             <div class="item">
             <img src="{{ asset('images/comchien.jpg') }}" alt="">
-            <p><h2>Cơm chiên</h2></p>
+            <h2>Cơm chiên</h2>
             </div>
         </div>
         @auth
