@@ -56,9 +56,7 @@ nav a {
     text-decoration: none;
     margin-right: 30px;
 }
-nav form{
-    color: rgba(238, 100, 100, 0.927);
-}
+
 nav a:hover {
     color: rgb(233, 6, 6); /* đổi màu khi hover */
 }

@@ -2,9 +2,17 @@
 <html>
 <head>
     <title>Đăng ký</title>
+         <link rel="stylesheet" href="{{ asset('css/dangki.css') }}">
 </head>
 <body>
-
+<nav>
+            <a href="/home">Trang chủ</a>
+            <a href="/menu">Thực đơn</a>
+            <a href="/thanhtoan">Thanh toán</a>
+            <a href="/login">Đăng nhập</a>
+            <a href="/register">Đăng ký</a>
+            
+        </nav>
 <h2>Đăng ký</h2>
 
 <form method="POST" action="/register">

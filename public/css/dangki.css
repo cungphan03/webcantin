@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
     background: linear-gradient(to right, #f8cdda, #f1b3c2);
     margin: 0;
-    padding-top: 70px; /* tránh nav đè */
+    padding-top: 70px;
 }
 
 /* NAV */
@@ -39,7 +39,7 @@ h2 {
 
 /* FORM */
 form {
-    width: 350px;
+    width: 380px;
     margin: 20px auto;
     background: white;
     padding: 30px;
@@ -74,7 +74,7 @@ button:hover {
     background: #e14c73;
 }
 
-/* Link đăng ký */
+/* Link */
 a {
     display: block;
     text-align: center;
