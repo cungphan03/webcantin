@@ -36,7 +36,7 @@ class DishController extends Controller
     'user_id' => Auth::id(),
     'dish_id' => $request->dish_id,
     'quantity' => $request->quantity,
-    'status' => 'pending', // thêm dòng này
+    'status' => 'pending', 
 ]);
 
     return back()->with('success', 'Đặt món thành công!');

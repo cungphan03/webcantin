@@ -22,6 +22,7 @@
             <a href="/menu">Thực đơn</a>
             <a href="/thanhtoan">Thanh toán</a>
             <a href="/login">Đăng nhập</a>
+            <a href="/register">Đăng ký</a>
             
         </nav>
         <h1 class="td"> MÓN ĂN NỔI BẬT</h1>

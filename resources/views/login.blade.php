@@ -1,49 +1,23 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html>
 <head>
-    <meta charset="UTF-8">
     <title>Đăng nhập</title>
-    <link rel="stylesheet" href="{{ asset('css/login.css') }}">
 </head>
-
 <body>
-    <nav>
-            <a href="/home">Trang chủ</a>
-            <a href="/menu">Thực đơn</a>
-            <a href="/thanhtoan">Thanh toán</a>
-            <a href="/login">Đăng nhập</a>
-            
-        </nav>
-<div class="login-box">
-    <h2>Đăng nhập</h2>
 
-    {{-- Thông báo lỗi --}}
-    @if(session('error'))
-        <p class="error">{{ session('error') }}</p>
-    @endif
+<h2>Đăng nhập</h2>
 
-    {{-- Validate lỗi --}}
-    @if ($errors->any())
-        <div class="error">
-            @foreach ($errors->all() as $error)
-                <p>{{ $error }}</p>
-            @endforeach
-        </div>
-    @endif
+<form method="POST" action="/login">
+    @csrf
 
-    <form method="POST" action="{{ route('login') }}">
-        @csrf
+    <input type="email" name="email" placeholder="Email"><br><br>
 
-        <input type="email" name="email" placeholder="Nhập email" required>
+    <input type="password" name="password" placeholder="Mật khẩu"><br><br>
 
-        <input type="password" name="password" placeholder="Nhập mật khẩu" required>
+    <button type="submit">Đăng nhập</button>
+</form>
 
-        <button type="submit">Đăng nhập</button>
-    </form>
-    <div class="qv">
-        <a href="/home" >← Quay về trang chủ</a>
-    </div>
-    
-</div>
+<a href="/register">Chưa có tài khoản? Đăng ký</a>
+
 </body>
 </html>

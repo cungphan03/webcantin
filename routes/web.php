@@ -2,6 +2,20 @@
 use App\Http\Controllers\AuthController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\DishController;
+
+// ĐĂNG KÝ
+Route::get('/register', [AuthController::class, 'showRegister']);
+Route::post('/register', [AuthController::class, 'register']);
+
+// ĐĂNG NHẬP
+Route::get('/login', [AuthController::class, 'showLogin'])->name('login');
+Route::post('/login', [AuthController::class, 'login']);
+
+// ĐĂNG XUẤT
+Route::post('/logout', [AuthController::class, 'logout']);
+
+Route::get('/register', [AuthController::class, 'showRegister'])->name('register');
+Route::post('/register', [AuthController::class, 'register']);
 Route::get('/', [DishController::class, 'home'])->name('home');
 Route::get('/home', [DishController::class, 'home']);
 Route::get('/menu', [DishController::class, 'index']);
