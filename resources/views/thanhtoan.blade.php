@@ -16,7 +16,6 @@
 
 <h1>Đơn hàng của bạn</h1>
 
-{{-- ✅ THÔNG BÁO ĐẶT NGOÀI IF --}}
 @if(session('success'))
     <h3 style="color: green">{{ session('success') }}</h3>
 @endif

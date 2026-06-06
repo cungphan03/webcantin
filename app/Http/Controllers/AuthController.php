@@ -22,6 +22,14 @@ class AuthController extends Controller
             'name' => 'required',
             'email' => 'required|email|unique:users',
             'password' => 'required|min:6|confirmed',
+        ], [
+            'name.required' => 'Vui lòng nhập tên',
+            'email.required' => 'Vui lòng nhập email',
+            'email.email' => 'Email không hợp lệ',
+            'email.unique' => 'Email đã tồn tại',
+            'password.required' => 'Vui lòng nhập mật khẩu',
+            'password.min' => 'Mật khẩu phải ít nhất 6 ký tự',
+            'password.confirmed' => 'Mật khẩu nhập lại không đúng',
         ]);
 
         User::create([

@@ -15,12 +15,20 @@
         </nav>
 <h2>Đăng ký</h2>
 
+@if ($errors->any())
+    <div style="color:red;padding-left:70px;">
+        @foreach ($errors->all() as $error)
+            <p>{{ $error }}</p>
+        @endforeach
+    </div>
+@endif
+
 <form method="POST" action="/register">
     @csrf
 
-    <input type="text" name="name" placeholder="Tên"><br><br>
+    <input type="text" name="name" placeholder="Tên" value="{{ old('name') }}"><br><br>
 
-    <input type="email" name="email" placeholder="Email"><br><br>
+    <input type="email" name="email" placeholder="Email" value="{{ old('email') }}"><br><br>
 
     <input type="password" name="password" placeholder="Mật khẩu"><br><br>
 
