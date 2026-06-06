@@ -7,11 +7,11 @@ use App\Http\Controllers\DishController;
 /*
 Route::get('/register', [AuthController::class, 'showRegister']);
 Route::post('/register', [AuthController::class, 'register']);
-*/
+
 // ĐĂNG NHẬP
 Route::get('/login', [AuthController::class, 'showLogin'])->name('login');
 Route::post('/login', [AuthController::class, 'login']);
-
+*/
 // ĐĂNG XUẤT
 Route::post('/logout', [AuthController::class, 'logout']);
 

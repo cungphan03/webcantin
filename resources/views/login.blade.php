@@ -16,7 +16,11 @@
             
         </nav>
 <h2>Đăng nhập</h2>
-
+@if(session('error'))
+    <div style="color:red;padding-left:70px;">
+        {{ session('error') }}
+    </div>
+@endif
 <form method="POST" action="/login">
     @csrf
 
