@@ -58,8 +58,9 @@
         <form action="{{ route('order.delete', $order->id) }}" method="POST">
             @csrf
             @method('DELETE')
-            <button onclick="return confirm('Bạn có chắc muốn xóa?')">
-                Xóa
+            <button 
+            onclick="return confirm('Bạn có chắc muốn hủy?'); ">
+                Hủy đặt món
             </button>
         </form>
     </td>
