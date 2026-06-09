@@ -16,8 +16,8 @@ class DishController extends Controller
     return view('menu', compact('ansang', 'anvat', 'nuocuong'));
 }
     public function home() {
-    $dishes = Dish::all(); 
-    return view('home', compact('dishes'));
+    //$dishes = Dish::all(); 
+    return view('home');
 }
     public function datmon($id)
     {
@@ -50,7 +50,7 @@ public function delete($id) {
 
     $order->delete();
 
-    return back()->with('success', 'Đã xóa món khỏi danh sách!');
+    return back()->with('success', 'Hủy đặt món thành công!');
 }
 public function thanhtoan()
 {
