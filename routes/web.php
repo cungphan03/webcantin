@@ -33,6 +33,7 @@ Route::post('/datmon', [DishController::class, 'storeOrder'])
 Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
 Route::get('/thanhtoan', [DishController::class, 'thanhtoan'])
     ->middleware('auth');
+Route::delete('/order/{id}', [DishController::class, 'delete'])->name('order.delete');
 Route::post('/thanhtoan', [DishController::class, 'xulyThanhtoan'])
     ->middleware('auth')
     ->name('thanhtoan.xuly');

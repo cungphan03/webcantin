@@ -35,6 +35,7 @@
         <th>Giá</th>
         <th>Số lượng</th>
         <th>Thành tiền</th>
+        <th>Hành động</th>
     </tr>
 
     @php $total = 0; @endphp
@@ -53,6 +54,15 @@
             <td>{{ number_format($order->dish->price) }} VND</td>
             <td>{{ $order->quantity }}</td>
             <td>{{ number_format($thanhtien) }} VND</td>
+            <td>
+        <form action="{{ route('order.delete', $order->id) }}" method="POST">
+            @csrf
+            @method('DELETE')
+            <button onclick="return confirm('Bạn có chắc muốn xóa?')">
+                Xóa
+            </button>
+        </form>
+    </td>
         </tr>
     @endforeach
 

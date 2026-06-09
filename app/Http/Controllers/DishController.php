@@ -41,6 +41,17 @@ class DishController extends Controller
 
     return back()->with('success', 'Đặt món thành công!');
 }
+public function delete($id) {
+    $order = Order::find($id);
+
+    if (!$order) {
+        return back()->with('error', 'Không tìm thấy món!');
+    }
+
+    $order->delete();
+
+    return back()->with('success', 'Đã xóa món khỏi danh sách!');
+}
 public function thanhtoan()
 {
     $orders = Order::with('dish')
