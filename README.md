@@ -2,7 +2,7 @@
 
 ## Danh sách thành viên:
 
-* Phan Thị Nhật Cưng
+* Phan Thị Nhật Cưng(nhóm trưởng)
 * Nguyễn Vũ Thu Duyên
 
 ## Phân công nhiệm vụ:
